@@ -1,12 +1,18 @@
-import { Persona } from "/ITS/SEGUNDO AÑO/PROGRAMACION BACKEND/TP OBLIGATORIO/Persona";
+import { Persona } from "./Persona";
 
 class Empleado extends Persona{
     constructor(nombre, apellidos, numeroIdentificacion, estadoCivil, anoIncorporacion, numeroDespacho){
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.numeroIdentificacion = numeroIdentificacion;
-        this.estadoCivil = estadoCivil;
+        super(nombre, apellidos, numeroIdentificacion, estadoCivil);
+
         this.anoIncorporacion = anoIncorporacion;
         this.numeroDespacho = numeroDespacho;
+    }
+
+    get AnoIncorporacion(){
+        return this.anoIncorporacion;
+    }
+
+    get NumeroDespacho(){
+        return this.NumeroDespacho;
     }
 }

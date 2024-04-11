@@ -1,9 +1,15 @@
-import { Persona } from "/ITS/SEGUNDO AÑO/PROGRAMACION BACKEND/TP OBLIGATORIO/Persona";
+import { Persona } from "./Persona";
 
 class Estudiante extends Persona {
     constructor(nombre, apellido, numeroIdentificacion, estadoCivil, cursoMatriculado){
 
-        super();
+        super(nombre, apellido, numeroIdentificacion, estadoCivil);
+
+        this.cursoMatriculado = cursoMatriculado;
+    }
+
+    get CursoMatriculado(){
+        return this.cursoMatriculado;
 
     }
 }
