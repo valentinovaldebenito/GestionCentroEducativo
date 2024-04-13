@@ -24,15 +24,25 @@
 #toolbar-start{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 45%;
 }
 #toolbar-end{
     display: flex;
-    justify-content: end;
-    width: 50%;
-    margin-right: 5%;
+    justify-content: space-around;
+    align-items: center;
+    width: 55%;
 }
-#btn_plus{
+
+#contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+.btn{
     background-color: rgb(255, 255, 255);
     color: rgb(27, 27, 27);
     font-size: larger;
@@ -43,15 +53,7 @@
     border: 0px;
     border-radius: 5px;
 }
-#btn_plus:hover{
+.btn:hover{
     cursor: pointer;
     filter: drop-shadow(2px 2px 2px #3d3d3d);
-}
-
-#contenido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    width: 100%;
 }

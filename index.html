@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,20 +13,22 @@
                 <h1>Gestión del Centro Educativo</h1>
             </div>
             <div id="toolbar-end">
-                <button id="btn_plus">Cargar Persona</button>
+                <button onclick="alta()" class="btn">Alta de Usuario</button>
+                <button onclick="baja()" class="btn">Baja de Usuario</button>
+                <button onclick="imprimirInformacion()" class="btn">Imprimir Información</button>
             </div>
         </div>
         <div id="contenido">
-            <button onclick="alta()">Alta de Usuario</button>
-            <button onclick="baja()">Baja de Usuario</button>
-            <button onclick="imprimirInformacion()">Imprimir Información</button>
+            
         </div>
     </div>
 
     <script>
         const centroEducativo = new CentroEducativo();
+        
 
         function alta() {
+
             const nombre = prompt("Ingrese el nombre:");
             const apellidos = prompt("Ingrese el apellido:");
             const numeroIdentificacion = prompt("Ingrese el número de identificación:");
