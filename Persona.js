@@ -5,10 +5,20 @@ export class Persona {
         this.numeroIdentificacion = numeroIdentificacion;
         this.estadoCivil = estadoCivil;
     }
+
+    cambiarEstadoCivil(estadoCivil){
+        estadoCivil = this.estadoCivil
+        let nuevoEstadoCivil 
+        
+        setEstadoCivil = (estadoCivil) => {
+            estadoCivil = nuevoEstadoCivil;
+        }
+
+    }
 }
 
 //LA CLASE PERSONA TIENE QUE TENER EL METODO "CAMBIAR ESTADO CIVIL"
 
 //METODO TO STRING CONCATENA DATOS
 
-// LA CLASE CENTRO ESUCATIVO TIENE QUE TENER EL METODO "ALTA PERSONA - BAJA PERSONA - MODIFICACION PERSONA"
+// LA CLASE CENTRO EDUCATIVO TIENE QUE TENER EL METODO "ALTA PERSONA - BAJA PERSONA - MODIFICACION PERSONA"
