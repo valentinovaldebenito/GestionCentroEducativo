@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Centro Educativo</title>
 </head>
 <body>
+    <h1>Centro Educativo</h1>
+    <button onclick="alta()">Alta de Usuario</button>
+    <button onclick="baja()">Baja de Usuario</button>
+    <button onclick="imprimirInformacion()">Imprimir Información</button>
+
     <script src="main.js"></script>
+    <script>
+        const centroEducativo = new CentroEducativo();
+
+        function alta() {
+            const nombre = prompt("Ingrese el nombre:");
+            const apellidos = prompt("Ingrese el apellido:");
+            const numeroIdentificacion = prompt("Ingrese el número de identificación:");
+            const estadoCivil = prompt("Ingrese el estado civil:");
+            const persona = new Persona(nombre, apellidos, numeroIdentificacion, estadoCivil);
+            centroEducativo.alta(persona);
+        }
+
+        function baja() {
+            const numeroIdentificacion = prompt("Ingrese el número de identificación de la persona para dar de baja:");
+            centroEducativo.baja(numeroIdentificacion);
+        }
+
+        function imprimirInformacion() {
+            centroEducativo.imprimirInformacion();
+        }
+    </script>
 </body>
 </html>
