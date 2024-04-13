@@ -5,16 +5,6 @@ export class Persona {
         this.numeroIdentificacion = numeroIdentificacion;
         this.estadoCivil = estadoCivil;
     }
-
-    cambiarEstadoCivil(estadoCivil){
-        estadoCivil = this.estadoCivil
-        let nuevoEstadoCivil 
-        
-        setEstadoCivil = (estadoCivil) => {
-            estadoCivil = nuevoEstadoCivil;
-        }
-
-    }
 }
 
 //LA CLASE PERSONA TIENE QUE TENER EL METODO "CAMBIAR ESTADO CIVIL"
